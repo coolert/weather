@@ -2,6 +2,8 @@
 
 <p align="center"> 基于<a href="https://lbs.amap.com/dev/">高德开放平台</a>的PHP天气信息组件。</p>
 
+[![Build Status](https://travis-ci.org/coolert/weather.svg?branch=master)](https://travis-ci.org/coolert/weather)
+
 
 ## 安装
 
