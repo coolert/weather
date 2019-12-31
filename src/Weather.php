@@ -1,11 +1,22 @@
 <?php
-
+/**
+ * This file is part of the coolert/weather.
+ *
+ * (c) coolert <lvhui@gmx.com>
+ *
+ * This source file is subject to the MIT license that is bundled
+ * with this source code in the file LICENSE.
+ */
 namespace Coolert\Weather;
 
 use Coolert\Weather\Exceptions\HttpException;
 use Coolert\Weather\Exceptions\InvalidArgumentException;
 use GuzzleHttp\Client;
 
+/**
+ * Class Weather
+ * @package Coolert\Weather
+ */
 class Weather
 {
     protected  $key;
@@ -54,11 +65,11 @@ class Weather
         }
     }
 
-    public function getLiveWeather($city,$format){
+    public function getLiveWeather($city, $format = 'json'){
         return $this->getWeather($city,'base',$format);
     }
 
-    public function getForecastsWeather($city,$format){
+    public function getForecastsWeather($city, $format = 'json'){
         return $this->getWeather($city,'all',$format);
     }
 
