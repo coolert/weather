@@ -1,5 +1,6 @@
 <?php
-/**
+
+/*
  * This file is part of the coolert/weather.
  *
  * (c) coolert <lvhui@gmx.com>
@@ -10,9 +11,6 @@
 
 namespace Coolert\Weather\Exceptions;
 
-
 class Exception extends \Exception
 {
-
-
 }
